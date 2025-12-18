@@ -11,6 +11,7 @@ Our data is from NYC open data and is titled “Citywide Payroll Data (Fiscal Ye
 Overview of models and implementation:
 
 Linear Regression
+
 The model predicts the salary of NYC workers by examining how various factors of an individual’s job, like hours and job title, relate to their salary. Using one-hot encoding, the model converts categorical values into numerical values. It also scales these numeric features to ensure that they are combined in the model effectively. Each feature contains a certain value depending on how effective it is in increasing or decreasing the predicted salary. They are then combined to create a prediction of the final salary. It evaluates its performance using R-squared and mean squared error. R-squared shows how well the model explains the differences in workers’ salaries. The mean squared error measures the difference between the predicted and actual salaries. These metrics show how accurate the model’s predictions are and how well they follow given salary patterns. The regression model generated an RMSE of 11,093.56 and a
 strong R² score of 0.9398. With longer bars correlating with greater effects on salary, the plot showed that “Job Title” and “Pay Basis” were the most significant in predicting workers’ salaries. 
 
